@@ -7,20 +7,20 @@ public class Book {
     String title;
     String author;
     String genre;
-    HashMap<String, BookReview> reviews;
+    HashMap<UserAccount, BookReview> reviews;
 
     public Book(String title, String author, String genre) {
         this.title = title;
         this.author = author;
         this.genre = genre;
-        this.reviews = new HashMap<String, BookReview>();
+        this.reviews = new HashMap<UserAccount, BookReview>();
     }
 
-    public void addReview(String username, BookReview review) {
+    public void addReview(UserAccount reviewer, BookReview review) {
         // TODO implement here
     }
 
-    public void removeReview(BookReview review) {
+    public void removeReview(UserAccount reviewer) {
         // TODO implement here}
     }
 

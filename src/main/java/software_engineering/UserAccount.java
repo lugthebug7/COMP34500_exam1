@@ -1,13 +1,13 @@
 package software_engineering;
 
-import java.util.HashMap;
+import java.util.HashSet;
 
 public class UserAccount {
 
     private String username;
     private String password;
     private String name;
-    private HashMap<Book, BookReview> booksRead;
+    private HashSet<Book> booksRead;
     private boolean hostStatus;
     private boolean isManager;
 

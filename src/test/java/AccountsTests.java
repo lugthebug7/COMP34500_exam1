@@ -13,13 +13,27 @@ public class AccountsTests {
         UserAccount user = new UserAccount("username", "password", "Bobby Fischer");
         assertEquals("username", user.getUsername());
         assertEquals("password", user.getPassword());
+        assertEquals("Bobby Fischer", user.getName());
+        
     }
 
     @Test
-    public void testManagerAccount() {}
+    public void testManagerAccount() {
+        UserAccount manager = new UserAccount("manager", "password", "Bobby Fischer");
+        assertEquals("manager", manager.getUsername());
+        assertEquals("password", manager.getPassword());
+        assertEquals("Bobby Fischer", manager.getName());
+
+
+    }
 
     @Test
-    public void testMemberAccount() {}
+    public void testMemberAccount() {
+        UserAccount member = new UserAccount("member", "password", "Bobby Fischer");
+        assertEquals("member", member.getUsername());
+        assertEquals("password", member.getPassword());
+        assertEquals("Bobby Fischer", member.getName());
+    }
         
 
 

@@ -4,13 +4,13 @@ public class BookReview {
     
     private String review;
     private int rating;
-    private String username;
+    private UserAccount reviewer;
     private Book book;
     
-    public BookReview(String review, int rating, String username, Book book) {
+    public BookReview(String review, int rating, UserAccount reviewer, Book book) {
         this.review = review;
         this.rating = rating;
-        this.username = username;
+        this.reviewer = reviewer;
         this.book = book;
     }
     
@@ -24,9 +24,9 @@ public class BookReview {
         return 0;
     }
     
-    public String getUsername() {
+    public UserAccount getReviewer() {
         // TODO implement here
-        return "";
+        return null;
     }
     
     public String getBookTitle() {
@@ -35,7 +35,7 @@ public class BookReview {
     }
     
     public String toString() {
-        return "Review: " + review + "\nRating: " + rating + "\nUsername: " + username + "\nBook Title: " + book.getTitle() + "\n";
+        return "Review: " + review + "\nRating: " + rating + "\nUsername: " + reviewer.getName() + "\nBook Title: " + book.getTitle() + "\n";
     }
     
 }

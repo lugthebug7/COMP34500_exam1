@@ -65,6 +65,15 @@ public class BookMeet {
         // TODO - implement BookMeet.addAttendee
     }
 
+    public Boolean getRSVPStatus (UserAccount attendee) {
+        // TODO - implement BookMeet.getRSVPStatus
+        return null;
+    }
+
+    public void requestNewHost() {
+        // TODO - implement BookMeet.requestNewHost
+    }
+
 
     
 }

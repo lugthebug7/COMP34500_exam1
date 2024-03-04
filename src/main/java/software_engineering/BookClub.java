@@ -26,4 +26,20 @@ public class BookClub {
         // TODO - implement BookClub.addBook
     }
 
+    public ManagerAccount getManager() {
+        // TODO - implement BookClub.getManager
+        return null;
+    }
+
+    public HashSet<MemberAccount> getMembers() {
+        // TODO - implement BookClub.getMembers
+        return null;
+    }
+
+    public HashSet<Book> getBooks() {
+        // TODO - implement BookClub.getBooks
+        return null;
+    }
+
+
 }
