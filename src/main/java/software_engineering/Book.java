@@ -1,41 +1,51 @@
 package software_engineering;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class Book {
     String title;
     String author;
     String genre;
-    HashSet<BookReview> reviews;
+    HashMap<String, BookReview> reviews;
 
     public Book(String title, String author, String genre) {
         this.title = title;
         this.author = author;
         this.genre = genre;
-        this.reviews = new HashSet<BookReview>();
+        this.reviews = new HashMap<String, BookReview>();
     }
 
-    public void addReview(BookReview review) {
-        this.reviews.add(review);
+    public void addReview(String username, BookReview review) {
+        // TODO implement here
     }
 
     public void removeReview(BookReview review) {
-        this.reviews.remove(review);
+        // TODO implement here}
     }
 
     public String getTitle() {
-        return this.title;
+        // TODO implement here
+        return "";
     }
 
     public String getAuthor() {
-        return this.author;
+        // TODO implement here
+        return "";
     }
 
     public String getGenre() {
-        return this.genre;
+        // TODO implement here
+        return "";
     }
 
-    public HashSet<BookReview> getReviews() {
-        return this.reviews;
+    public HashMap<String, BookReview> getReviews() {
+        // TODO implement here
+        return null;
+    }
+
+    public BookReview getReview(String username) {
+        // TODO implement here
+        return null;
     }
 }
