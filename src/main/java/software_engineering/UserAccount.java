@@ -9,6 +9,7 @@ public class UserAccount {
     private String name;
     private HashMap<Book, BookReview> booksRead;
     private boolean hostStatus;
+    private boolean isManager;
 
     
     public UserAccount(String username, String password, String name) {
@@ -60,6 +61,11 @@ public class UserAccount {
 
     public void setHostStatus(boolean status) {
         // TODO implement here
+    }
+
+    public boolean getIsManager() {
+        // TODO implement here
+        return false;
     }
 
 
